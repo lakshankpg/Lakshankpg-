@@ -2,7 +2,7 @@ const config = require('../config');
 const { cmd, commands } = require('../command');
 const os = require("os");
 const { runtime } = require('../lib/functions');
-const imageUrl = 'YOUR PHOTO URL';
+const imageUrl = 'https://res.cloudinary.com/df2rnoijw/image/upload/v1752174426/thttfad7ce5brtp4nk6g.jpg';
 
 cmd({
     pattern: "menu",
@@ -17,7 +17,7 @@ async (conn, mek, m, { from, quoted, pushname, reply }) => {
     try {
         const selectionMessage = `
 ╭━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
-      *Hi 😈*  *${pushname}*
+      *Hi lakshan👾 Md*  *${pushname}*
       
     *Command List*
 ╰━━━━∙⋆⋅⋆∙━ ─┉─ • ─┉─⊷
