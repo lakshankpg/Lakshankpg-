@@ -13,7 +13,7 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = `╭━━〔 *MD* 〕━━┈⊷
+        const status = `╭━━〔 * lakshan MD* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *👋Hi*: ${pushname}
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
@@ -22,7 +22,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
 
-  *Multidevice Whatsapp Bot.*
+  *welcome lakshan Md.*
 
 `;
 
