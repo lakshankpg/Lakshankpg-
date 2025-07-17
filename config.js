@@ -1,15 +1,13 @@
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
-
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "Put the session-id here.", // ඔයාගේ session id එක දාන්න
-MONGODB: process.env.MONGODB || "Put the mongodb url here.", // ඔයාගේ mongodb url එක දාන්න
-ALIVE_IMG: process.env.ALIVE_IMG || "YOUR PHOTO URL",
-BOT_NAME: process.env.BOT_NAME || "MD",
-LANG: process.env.BOT_LANG || 'EN' ,
-OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39",
-DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '' : process.env.DELETEMSGSENDTO,
+
+SESSION_ID: process.env.SESSION_ID === undefined ? '𝐒𝐔𝐋𝐀-𝐌𝐃=wr8zmIiL#VdHh2psiYCN3-T13mbTNDzE285_LAU_kmOwrb7HryPk' : process.env.SESSION_ID,
+PREFIX: process.env.PREFIX || '.' ,
+SUDO: process.env.SUDO === undefined ? '94762731899' : process.env.SUDO,
+MODE: process.env.MODE === undefined ?"privet" : process.env.MODE,
+AUTO_READ_STATUS: process.env.AUTO_READ_STATUS === undefined ?"true" : process.env.AUTO_READ_STATUS
 };
